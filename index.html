@@ -5376,7 +5376,7 @@
         </div>
 
         <!-- Google Apps Script Setup Guide -->
-        <div class="bg-white rounded-2xl shadow-lg p-6 mb-8">
+        <!-- <div class="bg-white rounded-2xl shadow-lg p-6 mb-8">
             <h2 class="text-2xl font-semibold text-slate-800 mb-4">Google Apps Script Setup Guide</h2>
 
             <div class="space-y-6">
@@ -5591,7 +5591,7 @@ function deleteProduct(data) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <!-- Image Modal -->
@@ -5780,7 +5780,8 @@ function deleteProduct(data) {
         function init() {
             // Set the script URL if it's in localStorage
             if (state.scriptUrl) {
-                elements.scriptUrl.value = state.scriptUrl;
+                console.log("🚀 ~ init ~ state.scriptUrl:", state.scriptUrl)
+                elements.scriptUrl = state.scriptUrl;
                 connectToScript();
             } else {
                 handleConnect();
